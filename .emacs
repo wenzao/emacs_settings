@@ -13,9 +13,17 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
 (require 'package)
 (add-to-list 'package-archives
  '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-(add-to-list 'load-path "/Users/wenzao/.emacs.d/elpa/ess-20140810.7/lisp/")
+;; (package-initialize) ;; init elpa packages
+(add-to-list 'load-path "~//.emacs.d/elpa/popup-20140815.629/")
+(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-20140803.2118/")
+(require 'auto-complete-config)
+(ac-config-default)
+;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20140803.2118/dict")
+
+(add-to-list 'load-path "~/.emacs.d/elpa/ess-20140810.7/lisp/")
 (load "ess-site")
