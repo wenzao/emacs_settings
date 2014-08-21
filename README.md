@@ -1,6 +1,6 @@
 My Emacs settings
 ==============
-as a Pythong, R, and LaTeX editor
+as a Python, R, and LaTeX editor
 --------------
 
 # Installation guide
